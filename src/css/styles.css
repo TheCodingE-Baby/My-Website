@@ -1,0 +1,63 @@
+
+
+/* Body Styling */
+main article {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: linear-gradient(to bottom, blue, darkblue, violet);
+    color: #333;
+    padding: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    line-height: 1.6;
+    background-color: #f3eeee;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: white;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Main Content Styling */
+main {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

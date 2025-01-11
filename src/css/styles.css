@@ -2,22 +2,56 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /*Header styling*/
-header img{
-    max-width: 100px;
-    max-height: 100px;
+header{
+    text-align: center;
+    list-style: none;
+    gap: 20px;
+    text-overflow: clip;
 }
-header nav ul li a {
-    text-decoration: none;
+
+button{
+    background: linear-gradient(to bottom, green ,forestgreen, limegreen);
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     font-size: 18px;
-    padding: auto;
-    border: 2px solid #000;
+    border: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: #000;
+}
+button:hover{
+    background-color: linear-gradient(to bottom, yellow, gold, orange);
+    color: yellow;
+}
+header img{
+    width: 10vh;
+    height: 10vh;
+}
+
+header nav table {
     margin: auto;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+    width: 100vh;
+    border: solid #000;
+    background-color: #cfd5d8;
+}
+
+header nav table tr {
+    gap: 20px;
+    border-width: 20vh;
+}
+header nav table tr a {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.5s ease;
 }
 h1{
     font-size: 2em;
@@ -34,65 +68,156 @@ h2{
     color: #fff;
     text-align: center;
 }
-
-/* Body Styling */
-main article {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: linear-gradient(to bottom, blue, darkblue, violet);
-    color: #333;
-    padding: 20px;
-}
-
-a:hover {
-    text-decoration: underline;
-    line-height: 1.6;
-    background-color: #f3eeee;
-    color: #333;
-    padding: 20px;
-}
-
-/* Header Styling */
-header {
-    background: white;
+h3{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
     color: #fff;
-    padding: 10px 0;
     text-align: center;
-}
-
-/* Navigation Styling */
-nav {
-    margin: 20px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
 }
 
 /* Main Content Styling */
-main {
-    background: #fff;
+main img{
+    width: 50vh;
     padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Body Styling */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    background:linear-gradient(to bottom, #053bbb, #031a88, #020d55);
+    color: #fff;
+    padding: 10px;
+}
+
+/*Link style*/
+a:hover {   
+    text-decoration: none;
+    line-height: 1.6;
+    background-color: #fff;
+    padding: auto;
+}
+
+/* Now, the Section style*/
+div {
+    max-width: 80%;
+    min-height: 20px;
+    image-resolution: from image;
+}
+
+div aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    image-rendering: crisp-edges;
+    image-resolution: from image;
+}
+
+.Skills img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    image-rendering: crisp-edges;
+    image-resolution: from image;
 }
 
 /* Footer Styling */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+footer img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+/* Media Queries*/
+@media screen and (orientation: portrait) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+       
+    div {
+        width: 50vh;
+        height: 100%;
+        image-resolution: from image;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: last baseline;
+        flex-wrap: wrap;
+    }
+    aside img{
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        justify-items: last baseline;
+        flex-wrap: nowrap;
+        width: 30vh;
+    }
+
+    table{
+        width: 100%;
+    }
+    .Skills img{ 
+        gap: 20px;
+        padding: 20px;
+    }
+    .Skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: space-evenly;
+        margin: auto;
+    }
+    .Contact{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: space-evenly;
+        }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    
+}
+@media screen and (orientation: landscape){
+    
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background:linear-gradient(to bottom, #053bbb, #031a88, #020d55);
+        color: white;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+
+    aside img {
+        width: 200px;
+        margin: 10px;
+    }
 }

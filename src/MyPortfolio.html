@@ -9,18 +9,27 @@
 </head>
 <body>
     <header>
+                
         <nav>
-            <ul>
-                <li><a href="./MyPortfolio.html">Home</a></li>
-                <li><a href="./Profile.html">Profile</a></li>
-                <li><a href="./Academics.html">Academics</a></li>
-                <li><a href="./Preferences.html">Preferences</a></li>
-                <li><a href="./Skills.html">Skills</a></li>
-                <li><a href="./Contact.html">Contact</a></li>
-            </ul>
+            <table>
+                <tr>
+                    <td><a href="./MyPortfolio.html">Home</a></td>
+                    <td><a href="./Profile.html">Profile</a></td>
+                    <td><a href="./Academics.html">Academics</a></td>
+                    <td><a href="./Preferences.html">Preferences</a></td>
+                    <td><a href="./Skills.html">Skills</a></td>
+                    <td><a href="./Contact.html">Contact</a></td>
+                </tr>
+                
+            </table>
          </nav>
     </header>
-    <main>
+    <main>   
+        
+        <div class="time teller">
+            <button id="show-clock">Press here to tell the time</button>
+        </div>
+
         <section class="My Portfolio" id="MyPortfolio">
             <h1>My Portfolio</h1>
             <article class="My Portfolio">
@@ -35,6 +44,7 @@
                         for 11+ years, so I won't leave until I am ready for another 
                         life.
                     </p>
+                    <br>
 
                     <p>
                         I sometimes like going outdoors, and it is
@@ -45,18 +55,21 @@
                         loking at cars, and so on...I know this is boring for most
                         people, but this is what I like.
                     </p>
-
+                </div>
+                <div>
                     <aside>
-                        <img src="./images/Me.jpg" alt="me">
-                        <img src="./images/Home.jpg" alt="my home">
-                    </aside>
-
+                        <h3>My Photos</h3>
+                            <img src="./images/Me.jpg" alt="me">
+                            <img src="./images/Home.jpg" alt="my home">
+                    </aside>    
                 </div>
             </article>
         </section>
+
         <footer>
-            <img src="./images/Combine_E_and_F.png" alt="Logo">
+            <img src="./images/Combine_E_and_F.png" alt="Logo" class="Logo">
         </footer>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>

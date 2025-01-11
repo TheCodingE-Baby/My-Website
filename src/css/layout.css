@@ -1,58 +1,124 @@
-/* Flexbox Layout */
-.flex-container {
+/* Layout*/
+header{
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    align-content: start;
+}
+header nav table{
+    display: table;
+    align-content: start;
+}
+div{
+    display: flexbox;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div aside{
+    display: flex;   
+    flex-direction: column;
+    justify-content: safe;
+    flex-wrap: nowrap;
+    justify-items:center;
+    width: 80%;
 }
 
-.flex-item {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
-}
-
-.flex-item a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.flex-item a:hover {
-    text-decoration: underline;
-}
-
-/* CSS Grid Layout */
-.grid-container {
+table{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 12px);
+    width: 100%;
+}
+.Contact div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+    image-rendering:crisp-edges;
+    image-resolution: from image;
+    width: 100%;
 }
 
-.grid-item {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ccc;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+    
+/* Media Queries*/
 
-.grid-item a {
-    color: #007bff;
-    text-decoration: none;
-}
+@media screen and (orientation:portrait) {   
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header nav table {
+        display: table;
+        width: 50%;
+        gap: 10px;
+    }
 
-.grid-item a:hover {
-    text-decoration: underline;
-}
+    table{
+        display: table;
+        width: 100%;
+    }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .flex-container {
+    div{
+        display: flexbox;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
+    div aside {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-    .grid-container {
-        grid-template-columns: 1fr;
+    .Contact img{
+        width: 40%;
     }
 }
+
+@media screen and (orientation:landscape) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }   
+     
+    div aside{
+        aspect-ratio: 4/3;
+        display: flex;
+        margin: 10px;
+        align-items: end;
+        justify-items: last baseline;
+        align-content: end;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-items: last baseline;
+        align-items: last baseline;
+        flex-wrap: nowrap;
+    }
+    }
+
+ /*layout.css 
+*/

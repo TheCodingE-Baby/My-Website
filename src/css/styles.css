@@ -102,6 +102,19 @@ a:hover {
     padding: auto;
 }
 
+li a{
+    text-decoration: none;
+    color: #010;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
 /* Now, the Section style*/
 div {
     max-width: 80%;

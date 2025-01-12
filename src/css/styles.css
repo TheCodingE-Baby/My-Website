@@ -134,9 +134,7 @@ div aside{
     image-resolution: from image;
 }
 
-.Skills img{
-    width: 100px;
-    height: 100px;
+.skills img{
     margin: 20px;
     border-radius: 10px;
     image-rendering: crisp-edges;
@@ -185,21 +183,17 @@ footer img {
     table{
         width: 100%;
     }
-    .Skills img{ 
-        gap: 20px;
-        padding: 20px;
-    }
-    .Skills{
+    .skills img{ 
+              
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items: space-evenly;
-        margin: auto;
+        justify-content: space-evenly;
     }
-    .Contact{
+    .contact{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: space-evenly;
         }
     footer {

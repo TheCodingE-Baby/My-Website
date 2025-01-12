@@ -31,14 +31,13 @@ table{
     grid-template-columns: repeat(3, 12px);
     width: 100%;
 }
-.Contact div {
+.contact div {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-items: center;
     image-rendering:crisp-edges;
     image-resolution: from image;
-    width: 100%;
 }
 
 footer {
@@ -46,7 +45,13 @@ footer {
     flex-direction: row;
     justify-content: center;
 }
-    
+   
+.skills{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 /* Media Queries*/
 
 @media screen and (orientation:portrait) {   
@@ -85,8 +90,15 @@ footer {
         flex-wrap: wrap;
     }
 
-    .Contact img{
+    .contact img{
         width: 40%;
+    }
+
+    .skills{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
 
@@ -117,6 +129,13 @@ footer {
         justify-items: last baseline;
         align-items: last baseline;
         flex-wrap: nowrap;
+    }
+
+    .skills{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     }
 
